@@ -37,7 +37,7 @@
             		<a href="#" id="about" class="nav-link">ABOUT</a> 
           		</li>
           		<li>  
-            		<a href="" class="nav-link">PROJECTS</a>
+            		<a href="#" id = "projects" class="nav-link">PROJECTS</a>
           		</li>
           
         	</ul>
@@ -60,7 +60,7 @@
           
         </div>
         <div class="col-lg-6 testText">
-          <img src="climbin2.png" class="img-fluid rounded-circle w-85">
+          <img src="climbin2.png" class="img-fluid rounded-circle">
         </div>
       </div>
     </section>
@@ -84,7 +84,51 @@
       </div>
     </section>
 
+<section class="container-fluid px-0 mt-3 mb-3">
+      <div class="row align-items-center">
+        <div class="text-center text-white d-lg-block">
+        <div class= "display-2 mb-2"> <a name="projects"/><u>PROJECTS</u></div>
+          <div class="col-lg-12">
+              <div class = "row mt-3 d-flex mx-5 d-flex justify-content-center">
 
+                <div class = "col-lg-4 col-md-6 ">
+                  <div class="card" >
+                    <img class="card-img-top" src="patatap img.png" alt="Card image cap" >
+                      <div class="card-body text-dark">
+                        <h5 class="card-title"><strong><a class = "text-dark" href="https://github.com/cantwellnc/patatapClone">Patatap Clone</a></strong></h5>
+                        <p>Uses Paper.js and Howl.js to create an interactive audiovisual toy. Best for children under the age of 8, or very bored adults over the age of 30. </p> 
+                      </div>
+                  </div> 
+                </div>
+
+                <div class = "col-lg-4 col-md-6 ">
+                  <div class="card">
+                    <img class="card-img-top" src="blog.png" alt="Card image cap" >
+                      <div class="card-body text-dark border-dark ">
+                        <h5 class="card-title"><strong><a class = "text-dark" href="https://github.com/cantwellnc/blogApp">RESTing Blog</a></strong></h5>
+                        <p>Basic illustration of RESTful routing in a lorem ipsum blog. Built using Express, MongoDB, and Node.js. </p> 
+                      </div>
+                  </div> 
+                </div>
+
+                <!-- TO DO: Make another proj, add it here in place of this card. Add Resume + links to linkedIn and github. -->
+                <div class = "col-lg-4 col-md-6">
+                  <div class="card" >
+                    <!-- style="width: 18rem;" -->
+                    <img class="card-img-top" src="patatap img.png" alt="Card image cap">
+                      <div class="card-body text-dark">
+                        <h5 class="card-title"><strong><a class = "text-dark" href="https://github.com/cantwellnc/patatapClone">Patatap Clone</a></strong></h5>
+                        <p>Uses Paper.js and Howl.js to create an interactive audiovisual toy. Best for children under the age of 8, or very bored adults over the age of 30. </p> 
+                      </div>
+                  </div> 
+                </div>
+
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+ </section>
 
 
 
@@ -105,7 +149,7 @@
       function scrollToAnchor(aid){
         var aTag = $("a[name='"+ aid +"']");
         console.log(aTag);
-        $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+        $('html,body').animate({scrollTop: aTag.offset().top-60},'slow');
       }
 
       function topFunction() {
@@ -118,9 +162,16 @@
         scrollToAnchor('about');
       });
 
+       $("#projects").click(function() {
+        scrollToAnchor('projects');
+      });
+
       $("#home").click(function() {
         topFunction();
       });
+
+
+
 
 
       $(function () {
