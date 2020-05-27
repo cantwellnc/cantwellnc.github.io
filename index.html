@@ -31,7 +31,7 @@
       	<div class="collapse navbar-collapse" id="navLinks">
         	<ul class="navbar nav">
           		<li class="nav-item">
-            		<a href="" class="nav-link">HOME</a>
+            		<a href="" class="nav-link" id = "home">HOME</a><a name="home"/>
           		</li>
           		<li>  
             		<a href="#" id="about" class="nav-link">ABOUT</a> 
@@ -45,7 +45,7 @@
 
     </nav>
 
-<section class="container-fluid px-0 mt-3 mx-2">
+<section class="container-fluid px-0 mt-3 mx-2 mb-3">
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="text-center text-white d-none d-lg-block">
@@ -60,25 +60,26 @@
           
         </div>
         <div class="col-lg-6 testText">
-          <img src="climbin2.png" class="img-fluid rounded-circle">
+          <img src="climbin2.png" class="img-fluid rounded-circle w-85">
         </div>
       </div>
     </section>
 
 
-<section class="container-fluid px-0">
+<section class="container-fluid px-0 ">
       <div class="row align-items-center">
         <div class="col-lg-6">
           <div class="text-center text-white d-none d-lg-block">
             <div class= "display-2 mb-2"> <a name="about"/><u>ABOUT ME</u></div>
             <div> 
-              <p class = "bio pl-2 ml-5 text-left">I graduated from UNC-Chapel Hill in May of 2019 with a B.S. in Mathematics and a minor in Computer Science. Over the past two years, my interests have shifted towards building useful and aesthetic applications for businesses I believe in. Ideally, I want to use the technologies at my disposal to solve difficult problems in the outdoor industry.</p>
+              <p class = "bio pl-2 ml-5 text-left">I graduated from UNC-Chapel Hill in May of 2019 with a B.S. in Mathematics and a minor in Computer Science. Over the past two years, my interests have shifted towards building aesthetic applications that engage a wider audience with various ideas in STEM. I use the technologies at my disposal together with my mathematical background to solve difficult problems in unconventional ways. I'm constantly exploring new ways of looking at the world around me, learning as much as I can as I go. I also still do some math stuff; talk to me anytime about <a href = "https://forum.azimuthproject.org/discussion/1808/lecture-2-what-is-applied-category-theory/p1">applied category theory</a> or <a href = "https://www.ias.edu/ideas/2013/lesnick-topological-data-analysis">topological data analyis</a>.</p>
+              <p class = "bio pl-2 ml-5 text-left">When I'm not working, you can find me at the climbing gym or on some outdoor adventures. I'm also a routesetter at <a href = "http://climbprogression.com/">Progression Climbing and Fitness</a> in Chapel Hill, NC. In an ideal world, I'd like to develop some software that would positively impact the climbing industry (ahem...looking at you, RockGymPro).</p>
             </div>
           </div>
           
         </div>
-        <div class="col-lg-6 testText">
-          
+        <div class="col-lg-6 text-center mt-3">
+          <img src="simp.png" class="img-fluid rounded w-75">
         </div>
       </div>
     </section>
@@ -107,8 +108,18 @@
         $('html,body').animate({scrollTop: aTag.offset().top},'slow');
       }
 
+      function topFunction() {
+        // document.body.scrollTop = 0; // For Safari
+        // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        $('body').animate({scrollTop: 0},'slow');
+      }
+
       $("#about").click(function() {
-      scrollToAnchor('about');
+        scrollToAnchor('about');
+      });
+
+      $("#home").click(function() {
+        topFunction();
       });
 
 
