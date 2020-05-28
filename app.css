@@ -93,6 +93,12 @@ img{
 
 .projectPurple{
     color: #a014b3;
+
+}
+
+#footer{
+    font-size:.5rem;
+    display: inline;
 }
 
 
