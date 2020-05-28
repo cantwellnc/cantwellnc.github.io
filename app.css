@@ -1,6 +1,8 @@
 body{
     background:#f5d9df; 
     font-family: Nunito, sans-serif;
+    color:black;
+    overflow-x:hidden;
 }
 
 #mainnav {
@@ -9,7 +11,7 @@ body{
 }
 
 #mainnav .nav-link {
-    color:white; 
+    color:black; 
 }
 
 #mainnav .nav-link:hover {
@@ -88,5 +90,10 @@ h1 {
 img{
     object-fit:cover;
 }
+
+.projectPurple{
+    color: #a014b3;
+}
+
 
 
