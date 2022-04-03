@@ -1,7 +1,14 @@
+/* --space-cadet: #2d3142ff;
+--silver: #bfc0c0ff;
+--white: #ffffffff;
+--mandarin: #ef8354ff;
+--black-coral: #4f5d75ff; */
+
+
 body{
-    background:#f5d9df; 
+    background:#4f5d75ff; 
     font-family: Nunito, sans-serif;
-    color:black;
+    color:#ffffffff;
     overflow-x:hidden;
 }
 
@@ -11,7 +18,7 @@ body{
 }
 
 #mainnav .nav-link {
-    color:black; 
+    color:#ef8354ff; 
 }
 
 #mainnav .nav-link:hover {
@@ -19,7 +26,7 @@ body{
 }
 
 #mainnav .navbar-brand{
-    color:#EA1C2C; 
+    color:#bfc0c0ff; 
     font-size:1.5rem; 
     font-weight:100; 
 }
@@ -27,10 +34,12 @@ body{
 h1 {
     font-weight:100; 
     font-size:3rem; 
+    color: #bfc0c0ff;
+
 }
 
 .navbar.scrolled {
-    background: rgb(222,192,222); 
+    background: #2d3142ff; 
     /* changes bg of navbar when user scrolls */
     transition: background 500ms;
     /* fades bg in*/
@@ -84,6 +93,7 @@ h1 {
 }
 
 .bio{
+    
     color:black;
 }
 
@@ -91,8 +101,12 @@ img{
     object-fit:cover;
 }
 
-.projectPurple{
-    color: #a014b3;
+.cv{
+    color:#bfc0c0ff
+}
+
+.title{
+    color: #ef8354ff;
 
 }
 
