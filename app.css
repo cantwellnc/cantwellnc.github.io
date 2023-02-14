@@ -18,7 +18,7 @@ body{
 }
 
 #mainnav .nav-link {
-    color:#ef8354ff; 
+    color:white; 
 }
 
 #mainnav .nav-link:hover {
@@ -94,7 +94,7 @@ h1 {
 
 .bio{
     
-    color:black;
+    color:white;
 }
 
 img{
@@ -106,13 +106,17 @@ img{
 }
 
 .title{
-    color: #ef8354ff;
+    color: #ffffffff;
 
 }
 
 #footer{
     font-size:.5rem;
     display: inline;
+}
+
+a {
+    color: #F60000
 }
 
 
