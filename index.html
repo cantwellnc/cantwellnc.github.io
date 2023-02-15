@@ -59,8 +59,6 @@
             <h1>PROBLEM SOLVER <span id="slash2">/</span> </h1>
             <h1>LEADER <span id="slash3">/</span> </h1>
             <h1>CLIMBER <span id="slash4">/</span></h1>
-            <h1>DESIGNER <span id="slash5">/</span> </h1>
-            <h1>DID I MENTION...CLIMBER <span id="slash6">/</span></h1>
 
           </div>
 
@@ -79,21 +77,22 @@
             <div class="display-2 mb-2"> <a name="about" /><u class="title">ABOUT ME</u></div>
             <div>
               <p class="bio pl-2 text-left">I currently work as a software engineer on the Model Development Team in
-                Vanguard's Enterprise Data Office , where I create and maintain novel MLOps infrastructure for all the
+                Vanguard's Enterprise Data Office, where I create and maintain novel MLOps infrastructure for all the
                 machine learning at Vanguard! I primarily work in Python, and all the cloud infrastructure I develop is
-                AWS-based.
+                AWS-based. 
+              </p>
+              <p class="bio pl-2 text-left">
                 I graduated from UNC-Chapel Hill in May of 2019 with a B.S. in Mathematics
-                and a minor in Computer Science. I try to use the technologies at my disposal together with my
+                and a minor in Computer Science. I use the technologies at my disposal together with my
                 mathematical background to solve difficult problems in unconventional ways. I'm constantly exploring new
                 ways of looking at the world around me, learning as much as I can as I go. I also still think about some
                 math stuff; talk to me anytime about <a
                   href="https://forum.azimuthproject.org/discussion/1808/lecture-2-what-is-applied-category-theory/p1">applied
-                  category theory</a> or things related to machine learning and statistical inference!
+                  category theory</a> or things related to machine learning and statistical inference! I also enjoy learning new languages (currently, Haskell and Julia) 
+                  and experimenting with computer-generated art. 
               </p>
               <p class="bio pl-2 text-left">When I'm not working, you can find me at the climbing gym or on some outdoor
-                adventures. I also enjoy learning new languages (my current top
-              </p>
-              <p> Previously, I worked as a routesetter at <a href="http://climbprogression.com/">Progression
+                adventures. Previously, I worked as a routesetter at <a href="http://climbprogression.com/">Progression
                   Climbing and Fitness</a> in Chapel Hill, NC. One day, I'd like to develop some software that would
                 positively impact the climbing industry (ahem...looking at you, RockGymPro).</p>
             </div>
@@ -108,21 +107,58 @@
 
     <section class="container-fluid px-0 mt-3 mb-3">
       <div class="row align-items-center">
-        <div class="text-center text-white d-lg-block">
+        <div class=" text-white d-lg-block">
           <div class="display-2 mb-2"> <a name="projects" /><u class="title">PROJECTS</u></div>
-          <div class="col-lg-4 col-md-6 d-flex justify-content-center align-items-center">
-            <ul>
+          <div class="d-flex">
+            <ul class="no-bullets">
               <li><a href="https://github.com/cantwellnc">See some old projects on my GitHub.</a></li>
-              <li>I gave a talk to some highschool students at the North Carolina School of Science and Math about Differential Privacy. 
-                An interactive notebook I wrote is <a href="https://colab.research.google.com/drive/1B8j-cKnmkZhfBPJFW3nAFGD-woEQXvF8#scrollTo=9M82rjsMdtH3">here</a>. 
-              </li><a href="https://colab.research.google.com/drive/1IfUtpZEueyV6MAIv6-u4DKm5yBIOYXpK?usp=sharing">Here's</a> an attempt at training an Variational Autoencoder to generate botanical illustrations of insects. 
-              It is messy + was hacked together; be forewarned! This was part of me trying to understand what the heck a VAE actually is.
-              <li>I like learning new programming languages in my free time! Right now, I've been getting back into Haskell and Julia (really excited about this!).</li>
-              <li>I'm also quite interested in the theme of compositionality. I really enjoyed the work of Libkind et al. (An Algebraic Framework for Structured Epidemic Modeling), 
-              which develops a framework for building complex epidemiological models (systems of differential equations) hierarchically from simpler models. Not only does it 
-              develop the maths behind this, but it also implements this in the Julia programming language!
+              <li style="padding-top: 10px;">I gave a talk to some highschool students at the North Carolina School of
+                Science and Math about
+                the mathematics of data privacy in Jan 2023. </li>
+              <li>
+                An interactive notebook I put together that takes a Bayesian perspective is <a
+                  href="https://colab.research.google.com/drive/1B8j-cKnmkZhfBPJFW3nAFGD-woEQXvF8#scrollTo=9M82rjsMdtH3">here</a>.
               </li>
-              <li></li> 
+              <li style="padding-top: 10px;"> <a
+                  href="https://colab.research.google.com/drive/1IfUtpZEueyV6MAIv6-u4DKm5yBIOYXpK?usp=sharing">Here's</a>
+                an attempt at training an Variational Autoencoder to generate botanical illustrations of insects.
+                It is messy + was hacked together; be forewarned! This was part of me trying to understand what the heck
+                a
+                VAE actually is.
+              </li>
+              <li style="padding-top: 10px;">I like learning new programming languages in my free time! Right now, I've
+                been getting back into
+                Haskell and Julia (python syntax at C speeds?!).</li>
+              <li style="padding-top: 10px;">
+                I'm also quite interested in the theme of compositionality in science. I really enjoyed the work of
+                Libkind et
+                al. (<a href="https://arxiv.org/abs/2203.16345">An Algebraic Framework for Structured Epidemic
+                  Modeling</a>), </li>
+              <li>
+                which develops a framework for building complex epidemiological models (systems of differential
+                equations) hierarchically from simpler models.
+              </li>
+              <li style="padding-top: 10px;">
+                The punchline of that paper is that users of this framework can reliably build complex models using
+                a high-level syntax + semantics, and back out the </li>
+              <li> <b style="color: goldenrod;">trivially correct</b> system of
+                differential equations that this model represents! No more worrying about sign errors or turning the 
+                algebra crank correctly.
+              </li>
+              <li> Not only does it
+                develop the maths behind this, but it also implements this framework in the Julia programming language!
+              </li>
+              <li style="padding-top: 10px;">
+                I've also been learning about Graph Neural Networks. It turns out that a lot of NN architectures
+                are
+                just Graph NNs (with a message-passing scheme) operating on
+              </li>
+              <li>specific "domain" graphs.
+                For example,
+                the attention mechanism in Transformers can be understood as message-passing on a complete graph of n
+                tokens!
+              </li>
+              <li> This makes GNNs seem more "discovered" than "invented" when compared to other NN architectures.</li>
             </ul>
           </div>
         </div>
