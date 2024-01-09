@@ -1,0 +1,1 @@
+This page has been archived + now serves as a base for v2 of my [personal site](https://cantwellnc.github.io/personal-site-v2/). Please visit that instead of this page.
